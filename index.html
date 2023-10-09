@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">	
+<head>
+	<title>bitcoin private keys</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<!-- Tell the browser to be responsive to screen width -->
+  	<meta name="csrf-token" content="{{ csrf_token() }}">
+  	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+	<link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="bitcoin, private, key, database, all keys, private key, BTC. balance, lucky draw, random, DB">
+	<meta name="description" content="Live online bitcoin private key database">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	<style>
+		body{font-size: 9pt; font-family: 'Open Sans', sans-serif;}
+		a{text-decoration: none}
+		a:hover {text-decoration: underline}
+		.keys > span:hover { background: #f0f0f0; }
+		span:target { background: #ccffcc; }
+		.highlight {
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+<script src="./assets/jquery.js"></script>
+
+<h1>Bitcoin private key database</h1>
+<h2 id="h2">Page 1 out of 904625697166532776746648320380374280100293470930272690489102837043110636675</h2>
+
+<button type="submit" id="btn_goto">goto</button> <input type="text" id="page_num" name="page"/> <br/><br/>
+<button type="submit" id="btn_search">search</button> <input type="text" id="privkey" name="privkey"/> <br/><br/>
+<button type="submit" id="rand_jump">lucky draw!</button> <br/><br/>
+
+<a href="#", id="prev_page">previous</a> | <a href="#", id="next_page">next</a>
+<pre class="keys" id="items"><strong>Private Key</strong>                                            <strong>Address</strong>                            <strong>Balance</strong>
+</pre>
+<pre style="margin-top: 1em; font-size: 8pt;">It took a lot of computing power to generate this database. Donations welcome: 1FSEtK65nzibFy7U8Q9X9JU1zyqLkkDMbS<br>						© 2020 AIindustries<br><br></pre>
+<a href="#", id="prev_page1">previous</a> | <a href="#", id="next_page1">next</a>
+<script src="./assets/bignumber.min.js"></script>
+<script src="./assets/bitcoinjs-min.js"></script>
+<script src="./assets/btc.min.js"></script>
+<script src="./assets/app.min.js"></script>
+</body>
+</html>
